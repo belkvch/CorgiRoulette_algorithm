@@ -2,14 +2,14 @@ package org.example.entity;
 
 import java.util.Objects;
 
-public class Pair {
+public class Opponents {
     private long chosenUserId;
     private long opponentUserId;
 
-    public Pair() {
+    public Opponents() {
     }
 
-    public Pair(long chosenUserId, long opponentUserId) {
+    public Opponents(long chosenUserId, long opponentUserId) {
         this.chosenUserId = chosenUserId;
         this.opponentUserId = opponentUserId;
     }
@@ -34,8 +34,8 @@ public class Pair {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Pair pairUsers = (Pair) o;
-        return chosenUserId == pairUsers.chosenUserId && opponentUserId == pairUsers.opponentUserId;
+        Opponents opponentsUsers = (Opponents) o;
+        return chosenUserId == opponentsUsers.chosenUserId && opponentUserId == opponentsUsers.opponentUserId;
     }
 
     @Override
